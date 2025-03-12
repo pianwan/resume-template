@@ -1,0 +1,114 @@
+% us -> letterpaper
+% others -> a4paper
+\documentclass[letterpaper,11pt]{article}
+% \documentclass[a4paper,11pt]{article}
+
+\input{packages}
+\input{glyphtounicode}
+\input{cmds}
+\input{resume}
+
+% \privatmodetrue
+\privatmodefalse
+
+\begin{document}
+% title
+% name/contacts
+\vspace{12pt}
+\begin{center}
+  {
+  \Huge \scshape \private{NaraNara}} \\
+  \vspace{6pt}
+  \small
+  \raisebox{-0.1\height}\faPhone\ \private{(000) 111-2222} ~ 
+  \href{mailto:helloworld@google.com}{\raisebox{-0.2\height}\faEnvelope\  \underline{helloworld@google.com}} ~~
+  \href{https://www.linkedin.com/in/justintrudeau/}{\raisebox{-0.2\height}\faLinkedin\ \underline{https://www.linkedin.com/in/justintrudeau/}}  ~
+  \href{https://github.com/hypixeldev}{\raisebox{-0.2\height}\faGithub\ \underline{github.com/hypixeldev}}
+  \vspace{-8pt}
+\end{center}
+
+\vspace{-7pt}
+% education
+\section{Education}
+\begin{itemize}[leftmargin=0.0in, label={}]
+% institute 1
+\educationSubheading
+{Stanford University}{Sept 2023 -- Dec 2024}{M.S. in Computer Science}{Stanford, CA}
+\vspace{-5pt}
+%institute 2
+\educationSubheading
+{Massachusetts Institute of Technology}{Sept 2019 -- June 2023}{B.S. in Computer Science}{Cambridge, MA}
+\end{itemize}
+\vspace{-10pt}
+
+% skills
+\section{Skills}
+\begin{itemize}[leftmargin=0.0in, label={}]
+  \item{
+        \textbf{Languages}{: Java, C++, Python, Golang} \\
+        \textbf{Frameworks}{: PyTorch, Hadoop, Spark, Hive, Pandas, Scikit-Learn} \\
+        \textbf{Databases}{: MySQL, PostgreSQL, MongoDB, SQLite, Redis, Memcached, RocksDB} \\
+        \textbf{Tools}{: Git, Docker, Maven, Gradle, Kubernetes, Zookeeper, Kafka, Jenkins, gRPC, AWS, Azure, Nginx, TTT} \\
+        }
+\end{itemize}
+\vspace{-14pt} % educationSubheading includes -7pt
+
+% work experience 
+\section{Work Experience}
+\begin{itemize}[leftmargin=0.0in, label={}]
+\vspace{-2pt}
+
+% work 1
+\workSubheading
+{\href{https://wynncraft.com/}{Wynncraft}}{Jan 2025 -- Present}
+{MMORPG Player}{Remote}
+\vspace{-3pt}
+\resumeItemListStart
+\resumeItem{Explored and mastered Wynncraft’s \textbf{open-world MMORPG mechanics}, optimizing character builds, quest efficiency, and dungeon strategies for high-level gameplay.}
+\resumeItem{Developed in-depth knowledge of \textbf{class synergies, skill point allocation}, and \textbf{gear optimization} to maximize combat effectiveness in solo and group content.}
+\resumeItem{Collaborated with guild members to complete \textbf{guild wars, raids, and endgame content}, enhancing \textbf{team coordination} and \textbf{strategic planning} in large-scale battles.}
+\resumeItem{Analyzed in-game economy trends and engaged in \textbf{item trading and market speculation}, leveraging supply-demand principles to maximize emerald profits.}
+\resumeItem{Created and shared \textbf{detailed strategy guides} on builds, boss fights, and farming routes, helping new and veteran players optimize their gameplay experience.}
+\resumeItemListEnd
+
+% work 2
+\workSubheading
+{\href{https://leagueoflegends.com/}{League of Legends}}{Feb 2022 -- Feb 2023}
+{Ranked Player}{Remote}
+\vspace{-3pt}
+\resumeItemListStart
+\resumeItem{Mastered \textbf{macro and micro gameplay mechanics}, effectively managing map awareness, vision control, and objective prioritization to maintain a high win rate in ranked matches.}
+\resumeItem{Collaborated with teammates in high-pressure competitive games, enhancing \textbf{team coordination, shot-calling}, and \textbf{real-time decision-making} in fast-paced environments.}
+\resumeItem{Analyzed professional gameplay and patch updates to optimize champion pool and adapt to \textbf{meta shifts}, ensuring consistent performance across multiple seasons.}
+\resumeItem{Created and shared \textbf{strategy guides and gameplay analysis}, providing insights into optimal builds, matchups, and counter-strategies to help players improve their ranked performance.}
+\resumeItem{Engaged with the League of Legends community by participating in discussions, contributing to gameplay balance feedback, and assisting new players in learning advanced mechanics.}
+\resumeItemListEnd
+
+
+\end{itemize}
+\vspace{-10pt}
+
+% projects experiences
+\section{Project Experience}
+\begin{itemize}[leftmargin=0.0in, label={}]
+
+\resumeProjectHeading{SMP World}{Hands, keyboard, computer, internet}{Oct 2023 -- Dec 2023}
+\resumeItemListStart
+\vspace{3pt}
+\resumeItem{Mastered \textbf{resource management} and \textbf{base construction} by optimizing farming, mining, and storage systems for long-term survival.}
+\resumeItem{Navigated \textbf{combat scenarios} in PvE and PvP, using \textbf{tactical positioning, movement mechanics}, and \textbf{critical hit strategies} to dominate in battles.}
+\resumeItem{Explored the Nether and End dimensions to acquire rare resources, leading expeditions to locate and conquer End Cities for high-tier loot.}
+\resumeItemListEnd
+
+\resumeProjectHeading{Redstone Engineering}{Redstone, Wood}{Feb 2024 -- May 2024}
+\resumeItemListStart
+\vspace{3pt}
+\resumeItem{Designed and implemented advanced \textbf{Redstone contraptions}, including automatic farms, sorting systems, and player traps to optimize in-game efficiency.}
+\resumeItem{Developed a \textbf{lag-efficient storage system} handling thousands of in-game items using \textbf{Hopper mechanics, Water Streams}, and \textbf{Shulker box loaders}.}
+\resumeItem{Contributed to the Redstone community by sharing blueprints and tutorials for efficient contraption designs on forums and Discord servers.}
+\resumeItemListEnd
+
+
+\end{itemize}
+\vspace{-3pt}
+\end{document}
